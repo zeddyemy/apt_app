@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'screens/home_screen.dart';
+// import 'screens/home_screen.dart';
+import 'screens/splash_screen.dart';
 
 void main() {
   runApp(const PrimeHeritageApp());
@@ -17,7 +18,7 @@ class PrimeHeritageApp extends StatelessWidget {
         fontFamily: 'Arial',
         scaffoldBackgroundColor: const Color(0xFFF7F5F8),
       ),
-      home: const HomeScreen(),
+      home: const SplashScreen(),
     );
   }
 }

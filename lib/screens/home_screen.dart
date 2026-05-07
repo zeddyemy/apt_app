@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../widgets/app_header.dart';
 import '../widgets/balance_card.dart';
+import '../widgets/quick_actions.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -19,6 +20,8 @@ class HomeScreen extends StatelessWidget {
                 child: Column(
                   children: [
                     BalanceCard(accountName: 'Olumide', balance: 4500.00),
+                    SizedBox(height: 22),
+                    QuickActions(),
                   ],
                 ),
               ),
