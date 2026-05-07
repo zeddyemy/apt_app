@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../widgets/app_header.dart';
+import '../widgets/balance_card.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -12,7 +13,16 @@ class HomeScreen extends StatelessWidget {
           children: [
             AppHeader(),
 
-            Expanded(child: SingleChildScrollView()),
+            Expanded(
+              child: SingleChildScrollView(
+                padding: EdgeInsets.all(22),
+                child: Column(
+                  children: [
+                    BalanceCard(accountName: 'Olumide', balance: 4500.00),
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),
